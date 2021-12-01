@@ -1,8 +1,7 @@
-import React from 'react';
-import './dashboard.scss';
+import './page.dashboard.scss';
 
 function
-Dashboard() {
+PageDashboard() {
     return (
         <main>
             <h1>Dashboard page</h1>
@@ -10,4 +9,4 @@ Dashboard() {
     );
 }
 
-export default Dashboard;
+export default PageDashboard;
