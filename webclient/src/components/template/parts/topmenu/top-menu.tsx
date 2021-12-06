@@ -1,6 +1,9 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 function TopMenu() {
+    const { t } = useTranslation();
+
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -19,7 +22,7 @@ function TopMenu() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">Dashboard</Nav.Link>
-                        <NavDropdown title='Sales'>
+                        <NavDropdown title={t('Sales')}>
                             <NavDropdown.Item href="/sales">List sales</NavDropdown.Item>
                             <NavDropdown.Item href="/sales/add">New sale</NavDropdown.Item>
                             <NavDropdown.Divider />
