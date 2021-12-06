@@ -1,5 +1,5 @@
-import TopMenu from './topmenu/TopMenu';
+import TopMenu from './topmenu/top-menu';
 
-export default {
-    TopMenu: TopMenu
+export {
+    TopMenu
 };

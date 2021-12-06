@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import Parts from '../parts';
+import { TopMenu } from '../parts';
 
 function TemplateCustomer() {
     return (
         <div className='template-customer'>
-            <Parts.TopMenu />
+            <TopMenu />
             <Outlet />
         </div>
     );
