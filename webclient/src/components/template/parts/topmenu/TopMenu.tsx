@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import logo from "../../../../assets/logo/favicon.svg"
 
 function TopMenu() {
     return (
@@ -6,12 +7,13 @@ function TopMenu() {
             <Container>
                 <Navbar.Brand>
                     <img
-                        src="/assets/logo/favicon.svg"
+                        src={logo}
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
                         alt="Company logo"
                     />
+                    {' '}
                     Company Name
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
