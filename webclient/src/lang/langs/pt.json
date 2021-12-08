@@ -1,0 +1,24 @@
+{
+    "translation": {
+        "navBar": {
+            "Dashboard": "Painel",
+            "Inventory": "Estoque",
+            "ListOrders": "Listar ordens",
+            "ListProducts": "Listar produtos",
+            "ListMaterials": "Listar materiais",
+            "ListSales": "Listar vendas",
+            "ListSuppliers": "Listar fornecedores",
+            "NewMaterial": "Novo material",
+            "NewOrder": "Nova ordem",
+            "NewProduct": "Novo produto",
+            "NewSale": "Nova venda",
+            "NewSupplier": "Novo fornecedor",
+            "Purchases": "Compras",
+            "Sales": "Vendas",
+            "SignOut": "Sair"
+        },
+        "defaultPages": {
+            "NotFound": "Ops! Esse endereço não existe."
+        }
+    }
+}
