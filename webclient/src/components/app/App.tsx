@@ -20,6 +20,8 @@ function App() {
                         <Route  path='sales/add'     element={<Pages.PageNewSale/>} />
                         <Route  path='supplier'      element={<Pages.PageViewSuppliers/>} />
                         <Route  path='supplier/add'  element={<Pages.PageNewSupplier/>} />
+
+                        <Route  path='*'             element={<Pages.PageNotFound/>} />
                     </Route>
                 </Routes>
             </BrowserRouter>
