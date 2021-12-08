@@ -5,7 +5,7 @@ function PageNotFound() {
     const { t } = useTranslation();
 
     return (
-        <main>
+        <main className='page-not-found'>
             <h1>{t('defaultPages.NotFound')}</h1>
         </main>
     );
