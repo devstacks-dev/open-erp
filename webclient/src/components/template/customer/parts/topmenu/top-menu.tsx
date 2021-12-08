@@ -1,6 +1,8 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { TopMenuItem } from './top-menu.item.interface';
+import TopMenuLeftItems from './top-menu.left-items.json';
 
 function TopMenu() {
     const { t } = useTranslation();
@@ -21,27 +23,7 @@ function TopMenu() {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/">{t('navBar.Dashboard')}</Nav.Link>
-                        <NavDropdown title={t('navBar.Sales')}>
-                            <NavDropdown.Item as={Link} to="/sales">{t('navBar.ListSales')}</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/sales/add">{t('navBar.NewSale')}</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item as={Link} to="/products">{t('navBar.ListProducts')}</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/products/add">{t('navBar.NewProduct')}</NavDropdown.Item>
-                        </NavDropdown>
-                        <NavDropdown title={t('navBar.Inventory')}>
-                            <NavDropdown.Item as={Link} to="/inventory">{t('navBar.ListMaterials')}</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/inventory/add">{t('navBar.NewMaterial')}</NavDropdown.Item>
-                        </NavDropdown>
-                        <NavDropdown title={t('navBar.Purchases')}>
-                            <NavDropdown.Item as={Link} to="/purchase">{t('navBar.ListOrders')}</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/purchase/add">{t('navBar.NewOrder')}</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item as={Link} to="/supplier">{t('navBar.ListSuppliers')}</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/supplier/add">{t('navBar.NewSupplier')}</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
+                    {MenuItemsToNav(TopMenuLeftItems as TopMenuItem[])}
                     <Navbar.Text>
                         <Link to={'/'}>{t('navBar.SignOut')}</Link>
                     </Navbar.Text>
@@ -49,6 +31,34 @@ function TopMenu() {
             </Container>
         </Navbar>
     );
+
+    function MenuItemsToNav(menuItems: TopMenuItem[]) {
+        return (
+            <Nav className="me-auto">
+                {menuItems.map((menuItem: TopMenuItem) => {
+                    if (menuItem.children && menuItem.children.length > 0) {
+                        return (
+                            <NavDropdown title={t(menuItem.i18nKey)}>
+                                {menuItem.children.map((child: TopMenuItem) => {
+                                    if (child === null) {
+                                        return <NavDropdown.Divider />
+                                    }
+
+                                    return (
+                                        <NavDropdown.Item as={Link} to={child.url! || ""}>
+                                            {t(child.i18nKey)}
+                                        </NavDropdown.Item>
+                                    )
+                                })}
+                            </NavDropdown>
+                        )
+                    }
+
+                    return <Nav.Link as={Link} to={menuItem.url! || ""}>{t(menuItem.i18nKey)}</Nav.Link>
+                })}
+            </Nav>
+        );
+    }
 }
 
 export default TopMenu;
