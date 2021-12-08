@@ -1,6 +1,6 @@
 import * as Pages from '../pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import TemplateCustomer from '../template/customer/template.customer';
+import BackOfficeTemplate from '../template/back-office/back-office.template';
 import './App.scss';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         <div className='App'>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<TemplateCustomer/>}>
+                    <Route path='/' element={<BackOfficeTemplate/>}>
                         <Route  index                element={<Pages.PageDashboard/>} />
                         <Route  path='inventory'     element={<Pages.PageViewMaterials/>} />
                         <Route  path='inventory/add' element={<Pages.PageNewMaterial/>} />

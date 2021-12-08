@@ -35,17 +35,21 @@ function TopMenu() {
     function MenuItemsToNav(menuItems: TopMenuItem[]) {
         return (
             <Nav className="me-auto">
-                {menuItems.map((menuItem: TopMenuItem) => {
+                {menuItems.map((menuItem: TopMenuItem, parentIndex: number) => {
+                    const parentKey: string = `menu_${parentIndex}`;
+
                     if (menuItem.children && menuItem.children.length > 0) {
                         return (
-                            <NavDropdown title={t(menuItem.i18nKey)}>
-                                {menuItem.children.map((child: TopMenuItem) => {
+                            <NavDropdown title={t(menuItem.i18nKey)} key={parentKey}>
+                                {menuItem.children.map((child: TopMenuItem, childIndex: number) => {
+                                    const childKey: string = `menu_${parentIndex}_${childIndex}`;
+
                                     if (child === null) {
-                                        return <NavDropdown.Divider />
+                                        return <NavDropdown.Divider key={childKey} />
                                     }
 
                                     return (
-                                        <NavDropdown.Item as={Link} to={child.url! || ""}>
+                                        <NavDropdown.Item as={Link} to={child.url! || ""} key={childKey}>
                                             {t(child.i18nKey)}
                                         </NavDropdown.Item>
                                     )
@@ -54,7 +58,7 @@ function TopMenu() {
                         )
                     }
 
-                    return <Nav.Link as={Link} to={menuItem.url! || ""}>{t(menuItem.i18nKey)}</Nav.Link>
+                    return <Nav.Link as={Link} to={menuItem.url! || ""} key={parentKey}>{t(menuItem.i18nKey)}</Nav.Link>
                 })}
             </Nav>
         );
