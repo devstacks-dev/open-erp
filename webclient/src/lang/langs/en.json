@@ -1,0 +1,24 @@
+{
+    "translation": {
+        "navBar": {
+            "Dashboard": "Dashboard",
+            "Inventory": "Inventory",
+            "ListOrders": "List orders",
+            "ListProducts": "List products",
+            "ListMaterials": "List materials",
+            "ListSales": "List sales",
+            "ListSuppliers": "List suppliers",
+            "NewMaterial": "New material",
+            "NewOrder": "New order",
+            "NewProduct": "New product",
+            "NewSale": "New sale",
+            "NewSupplier": "New supplier",
+            "Purchases": "Purchases",
+            "Sales": "Sales",
+            "SignOut": "Sign Out"
+        },
+        "defaultPages": {
+            "NotFound": "Oops! This address does not exist."
+        }
+    }
+}
