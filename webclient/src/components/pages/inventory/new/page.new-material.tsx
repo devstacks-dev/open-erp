@@ -1,10 +1,11 @@
 import './page.new-material.scss';
+import { Row } from "react-bootstrap";
 
 function PageNewMaterial() {
     return (
-        <main>
+        <Row>
             <h1>New material page</h1>
-        </main>
+        </Row>
     );
 }
 

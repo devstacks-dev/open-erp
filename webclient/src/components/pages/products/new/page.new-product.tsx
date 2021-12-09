@@ -1,10 +1,11 @@
 import './page.new-product.scss';
+import { Row } from "react-bootstrap";
 
 function PageNewProduct() {
     return (
-        <main>
+        <Row>
             <h1>New product page</h1>
-        </main>
+        </Row>
     );
 }
 

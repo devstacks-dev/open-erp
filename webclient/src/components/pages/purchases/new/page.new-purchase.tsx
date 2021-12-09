@@ -1,10 +1,11 @@
 import './page.new-purchase.scss';
+import { Row } from "react-bootstrap";
 
 function PageNewPurchase() {
     return (
-        <main>
+        <Row>
             <h1>New purchase page</h1>
-        </main>
+        </Row>
     );
 }
 

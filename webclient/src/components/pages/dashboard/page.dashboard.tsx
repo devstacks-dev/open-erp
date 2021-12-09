@@ -1,11 +1,12 @@
 import './page.dashboard.scss';
+import { Row } from "react-bootstrap";
 
 function
 PageDashboard() {
     return (
-        <main>
+        <Row>
             <h1>Dashboard page</h1>
-        </main>
+        </Row>
     );
 }
 

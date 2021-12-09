@@ -1,10 +1,11 @@
 import './page.view-sales.scss';
+import { Row } from "react-bootstrap";
 
 function PageViewSales() {
     return (
-        <div className='view-sales-page'>
+        <Row className='view-sales-page'>
             <h1>Sales list page</h1>
-        </div>
+        </Row>
     );
 }
 

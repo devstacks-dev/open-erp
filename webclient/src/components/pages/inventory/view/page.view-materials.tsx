@@ -1,10 +1,11 @@
 import './page.view-materials.scss';
+import { Row } from "react-bootstrap";
 
 function PageViewMaterials() {
     return (
-        <main>
+        <Row>
             <h1>View materials page</h1>
-        </main>
+        </Row>
     );
 }
 

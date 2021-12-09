@@ -1,10 +1,11 @@
 import './page.view-products.scss';
+import { Row } from "react-bootstrap";
 
 function PageViewProducts() {
     return (
-        <main>
+        <Row>
             <h1>View products page</h1>
-        </main>
+        </Row>
     );
 }
 

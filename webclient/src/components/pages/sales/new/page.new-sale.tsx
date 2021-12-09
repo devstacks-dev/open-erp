@@ -1,10 +1,11 @@
 import './page.new-sale.scss';
+import { Row } from "react-bootstrap";
 
 function PageNewSale() {
     return (
-        <main>
+        <Row>
             <h1>New sale page</h1>
-        </main>
+        </Row>
     );
 }
 
