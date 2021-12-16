@@ -5,7 +5,7 @@ import TopMenuLeftItems from './top-menu.left-items.json';
 import React from "react";
 import i18n from "i18next";
 
-class TemplateBackOfficeTopMenu extends React.Component {
+class TopMenu extends React.Component {
     render(): JSX.Element {
         return (
             <Navbar bg="light" expand="lg">
@@ -66,4 +66,4 @@ class TemplateBackOfficeTopMenu extends React.Component {
     }
 }
 
-export default TemplateBackOfficeTopMenu;
+export default TopMenu;

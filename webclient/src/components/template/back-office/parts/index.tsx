@@ -1,5 +1,5 @@
-import TemplateBackOfficeTopMenu from './topmenu/template.back-office.top-menu';
+import TopMenu from './topmenu/top-menu';
 
 export {
-    TemplateBackOfficeTopMenu
+    TopMenu
 };
