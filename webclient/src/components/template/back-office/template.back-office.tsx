@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
-import { TopMenu } from './parts';
+import { TemplateBackOfficeTopMenu } from './parts';
 import { Container } from "react-bootstrap";
 import React from "react";
 
-class BackOfficeTemplate extends React.Component {
+class TemplateBackOffice extends React.Component {
     render(): JSX.Element {
         return (
             <div className='back-office-template'>
-                <TopMenu />
+                <TemplateBackOfficeTopMenu />
                 <Container className="mt-3 text-start">
                     <Outlet />
                 </Container>
@@ -16,4 +16,4 @@ class BackOfficeTemplate extends React.Component {
     }
 }
 
-export default BackOfficeTemplate;
+export default TemplateBackOffice;

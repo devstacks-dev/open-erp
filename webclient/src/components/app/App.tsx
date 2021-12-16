@@ -1,6 +1,6 @@
 import * as Pages from '../pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import BackOfficeTemplate from '../template/back-office/back-office.template';
+import TemplateBackOffice from '../template/back-office/template.back-office';
 import './App.scss';
 import React from "react";
 
@@ -10,7 +10,7 @@ class App extends React.Component {
             <div className='App'>
                 <BrowserRouter>
                     <Routes>
-                        <Route path='/' element={<BackOfficeTemplate/>}>
+                        <Route path='/' element={<TemplateBackOffice/>}>
                             <Route  index                element={<Pages.PageDashboard/>} />
                             <Route  path='inventory'     element={<Pages.PageViewMaterials/>} />
                             <Route  path='inventory/add' element={<Pages.PageNewMaterial/>} />
