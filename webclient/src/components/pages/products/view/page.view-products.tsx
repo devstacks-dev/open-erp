@@ -1,15 +1,15 @@
 import './page.view-products.scss';
-import { Row } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+import SharedPageTitle from "../../../shared/page-title/shared.page-title";
+import React from "react";
 
-function PageViewProducts() {
-    const { t } = useTranslation();
-
-    return (
-        <Row>
-            <h1>{t('Pages.ProductsView.Title')}</h1>
-        </Row>
-    );
+class PageViewProducts extends React.Component {
+    render(): JSX.Element {
+        return (
+            <>
+                <SharedPageTitle Title="Pages.ViewProducts.Title" />
+            </>
+        );
+    }
 }
 
 export default PageViewProducts;

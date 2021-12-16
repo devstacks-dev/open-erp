@@ -1,12 +1,15 @@
 import './page.view-purchases.scss';
-import { Row } from "react-bootstrap";
+import React from "react";
+import SharedPageTitle from "../../../shared/page-title/shared.page-title";
 
-function PageViewPurchases() {
-    return (
-        <Row>
-            <h1>View purchases page</h1>
-        </Row>
-    );
+class PageViewPurchases extends React.Component {
+    render(): JSX.Element {
+        return (
+            <>
+                <SharedPageTitle Title="Pages.ViewPurchases.Title" />
+            </>
+        );
+    }
 }
 
 export default PageViewPurchases;

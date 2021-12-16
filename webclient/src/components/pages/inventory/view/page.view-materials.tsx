@@ -1,12 +1,15 @@
 import './page.view-materials.scss';
-import { Row } from "react-bootstrap";
+import React from "react";
+import SharedPageTitle from "../../../shared/page-title/shared.page-title";
 
-function PageViewMaterials() {
-    return (
-        <Row>
-            <h1>View materials page</h1>
-        </Row>
-    );
+class PageViewMaterials extends React.Component {
+    render(): JSX.Element {
+        return (
+            <>
+                <SharedPageTitle Title="Pages.ViewMaterials.Title" />
+            </>
+        );
+    }
 }
 
 export default PageViewMaterials;

@@ -1,12 +1,15 @@
 import './page.view-sales.scss';
-import { Row } from "react-bootstrap";
+import React from "react";
+import SharedPageTitle from "../../../shared/page-title/shared.page-title";
 
-function PageViewSales() {
-    return (
-        <Row className='view-sales-page'>
-            <h1>Sales list page</h1>
-        </Row>
-    );
+class PageViewSales extends React.Component {
+    render(): JSX.Element {
+        return (
+            <>
+                <SharedPageTitle Title="Pages.ViewSales.Title" />
+            </>
+        );
+    }
 }
 
 export default PageViewSales;

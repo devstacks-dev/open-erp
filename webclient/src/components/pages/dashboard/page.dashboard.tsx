@@ -1,13 +1,15 @@
 import './page.dashboard.scss';
-import { Row } from "react-bootstrap";
+import React from "react";
+import SharedPageTitle from "../../shared/page-title/shared.page-title";
 
-function
-PageDashboard() {
-    return (
-        <Row>
-            <h1>Dashboard page</h1>
-        </Row>
-    );
+class PageDashboard extends React.Component {
+    render(): JSX.Element {
+        return (
+            <>
+                <SharedPageTitle Title="Pages.Dashboard.Title" />
+            </>
+        );
+    }
 }
 
 export default PageDashboard;

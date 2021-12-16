@@ -18,11 +18,41 @@
             "SignOut": "Sair"
         },
         "Pages": {
+            "Dashboard": {
+                "Title": "Visão geral"
+            },
+            "NewMaterial": {
+                "Title": "Nova matéria prima"
+            },
+            "NewProduct": {
+                "Title": "Novo produto"
+            },
+            "NewPurchase": {
+                "Title": "Nova compra"
+            },
+            "NewSale": {
+                "Title": "Nova venda"
+            },
+            "NewSupplier": {
+                "Title": "Novo fornecedor"
+            },
             "NotFound": {
                 "Title": "Ops! Esse endereço não existe."
             },
-            "ProductsView": {
-                "Title": "Produtos"
+            "ViewMaterials": {
+                "Title": "Ver matérias primas"
+            },
+            "ViewProducts": {
+                "Title": "Listagem de produtos"
+            },
+            "ViewPurchases": {
+                "Title": "Listagem de compras"
+            },
+            "ViewSales": {
+                "Title": "Listagem de vendas"
+            },
+            "ViewSuppliers": {
+                "Title": "Listagem de fornecedores"
             }
         }
     }

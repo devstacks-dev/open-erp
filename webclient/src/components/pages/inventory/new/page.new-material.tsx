@@ -1,12 +1,15 @@
 import './page.new-material.scss';
-import { Row } from "react-bootstrap";
+import React from "react";
+import SharedPageTitle from "../../../shared/page-title/shared.page-title";
 
-function PageNewMaterial() {
-    return (
-        <Row>
-            <h1>New material page</h1>
-        </Row>
-    );
+class PageNewMaterial extends React.Component {
+    render(): JSX.Element {
+        return (
+            <>
+                <SharedPageTitle Title="Pages.NewMaterial.Title" />
+            </>
+        );
+    }
 }
 
 export default PageNewMaterial;

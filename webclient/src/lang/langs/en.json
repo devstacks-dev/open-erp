@@ -18,11 +18,41 @@
             "SignOut": "Sign Out"
         },
         "Pages": {
+            "Dashboard": {
+                "Title": "Dashboard"
+            },
+            "NewMaterial": {
+                "Title": "New material"
+            },
+            "NewProduct": {
+                "Title": "New product"
+            },
+            "NewPurchase": {
+                "Title": "New purchase"
+            },
+            "NewSale": {
+                "Title": "New sale"
+            },
+            "NewSupplier": {
+                "Title": "New supplier"
+            },
             "NotFound": {
                 "Title": "Oops! This address does not exist."
             },
-            "ProductsView": {
-                "Title": "Products"
+            "ViewMaterials": {
+                "Title": "List of materials"
+            },
+            "ViewProducts": {
+                "Title": "List of products"
+            },
+            "ViewPurchases": {
+                "Title": "List of purchases"
+            },
+            "ViewSales": {
+                "Title": "List of sales"
+            },
+            "ViewSuppliers": {
+                "Title": "List of suppliers"
             }
         }
     }
