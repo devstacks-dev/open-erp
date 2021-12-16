@@ -1,6 +1,6 @@
 {
     "translation": {
-        "navBar": {
+        "NavBar": {
             "Dashboard": "Painel",
             "Inventory": "Estoque",
             "ListOrders": "Listar ordens",
@@ -17,8 +17,13 @@
             "Sales": "Vendas",
             "SignOut": "Sair"
         },
-        "defaultPages": {
-            "NotFound": "Ops! Esse endereço não existe."
+        "Pages": {
+            "NotFound": {
+                "Title": "Ops! Esse endereço não existe."
+            },
+            "ProductsView": {
+                "Title": "Produtos"
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ function PageNotFound() {
 
     return (
         <Row className='page-not-found'>
-            <h1>{t('defaultPages.NotFound')}</h1>
+            <h1>{t('Pages.NotFound.Title')}</h1>
         </Row>
     );
 }

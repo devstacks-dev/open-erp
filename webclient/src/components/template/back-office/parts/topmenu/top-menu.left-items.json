@@ -1,33 +1,33 @@
 [
     {
-        "i18nKey": "navBar.Dashboard",
+        "i18nKey": "NavBar.Dashboard",
         "url": "/"
     },
     {
-        "i18nKey": "navBar.Sales",
+        "i18nKey": "NavBar.Sales",
         "children": [
-            { "i18nKey": "navBar.ListSales",     "url": "/sales" },
-            { "i18nKey": "navBar.NewSale",       "url": "/sales/add" },
+            { "i18nKey": "NavBar.ListSales",     "url": "/sales" },
+            { "i18nKey": "NavBar.NewSale",       "url": "/sales/add" },
             null,
-            { "i18nKey": "navBar.ListProducts",  "url": "/products" },
-            { "i18nKey": "navBar.NewProduct",    "url": "/products/add" }
+            { "i18nKey": "NavBar.ListProducts",  "url": "/products" },
+            { "i18nKey": "NavBar.NewProduct",    "url": "/products/add" }
         ]
     },
     {
-        "i18nKey": "navBar.Inventory",
+        "i18nKey": "NavBar.Inventory",
         "children": [
-            { "i18nKey": "navBar.ListMaterials", "url": "/inventory" },
-            { "i18nKey": "navBar.NewMaterial",   "url": "/inventory/add" }
+            { "i18nKey": "NavBar.ListMaterials", "url": "/inventory" },
+            { "i18nKey": "NavBar.NewMaterial",   "url": "/inventory/add" }
         ]
     },
     {
-        "i18nKey": "navBar.Purchases",
+        "i18nKey": "NavBar.Purchases",
         "children": [
-            { "i18nKey": "navBar.ListOrders",    "url": "/purchase" },
-            { "i18nKey": "navBar.NewOrder",      "url": "/purchase/add" },
+            { "i18nKey": "NavBar.ListOrders",    "url": "/purchase" },
+            { "i18nKey": "NavBar.NewOrder",      "url": "/purchase/add" },
             null,
-            { "i18nKey": "navBar.ListSuppliers", "url": "/supplier" },
-            { "i18nKey": "navBar.NewSupplier",   "url": "/supplier/add" }
+            { "i18nKey": "NavBar.ListSuppliers", "url": "/supplier" },
+            { "i18nKey": "NavBar.NewSupplier",   "url": "/supplier/add" }
         ]
     }
 ]

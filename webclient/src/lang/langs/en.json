@@ -1,6 +1,6 @@
 {
     "translation": {
-        "navBar": {
+        "NavBar": {
             "Dashboard": "Dashboard",
             "Inventory": "Inventory",
             "ListOrders": "List orders",
@@ -17,8 +17,13 @@
             "Sales": "Sales",
             "SignOut": "Sign Out"
         },
-        "defaultPages": {
-            "NotFound": "Oops! This address does not exist."
+        "Pages": {
+            "NotFound": {
+                "Title": "Oops! This address does not exist."
+            },
+            "ProductsView": {
+                "Title": "Products"
+            }
         }
     }
 }

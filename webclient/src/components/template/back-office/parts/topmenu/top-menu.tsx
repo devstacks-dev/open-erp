@@ -25,7 +25,7 @@ function TopMenu() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     {MenuItemsToNav(TopMenuLeftItems as TopMenuItem[])}
                     <Navbar.Text>
-                        <Link to={'/'}>{t('navBar.SignOut')}</Link>
+                        <Link to={'/'}>{t('NavBar.SignOut')}</Link>
                     </Navbar.Text>
                 </Navbar.Collapse>
             </Container>

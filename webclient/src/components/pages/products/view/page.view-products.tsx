@@ -1,10 +1,13 @@
 import './page.view-products.scss';
 import { Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 function PageViewProducts() {
+    const { t } = useTranslation();
+
     return (
         <Row>
-            <h1>View products page</h1>
+            <h1>{t('Pages.ProductsView.Title')}</h1>
         </Row>
     );
 }
