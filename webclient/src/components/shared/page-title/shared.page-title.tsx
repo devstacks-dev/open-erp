@@ -9,7 +9,7 @@ interface SharedPageTitleProps {
 class SharedPageTitle extends React.Component<SharedPageTitleProps> {
     render(): JSX.Element {
         return (
-            <Row>
+            <Row className="mt-5">
                 <Col xs={12}>
                     <h1>{i18n.t(this.props.Title)}</h1>
                 </Col>

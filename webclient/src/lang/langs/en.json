@@ -43,6 +43,17 @@
                 "Title": "List of materials"
             },
             "ViewProducts": {
+                "Buttons": {
+                    "New": "New product"
+                },
+                "Columns": {
+                    "Name": "Name",
+                    "Qty": "Quantity",
+                    "Price": "Price"
+                },
+                "Fields": {
+                    "Search": "Search"
+                },
                 "Title": "List of products"
             },
             "ViewPurchases": {

@@ -43,6 +43,17 @@
                 "Title": "Ver matérias primas"
             },
             "ViewProducts": {
+                "Buttons": {
+                    "New": "Novo produto"
+                },
+                "Columns": {
+                    "Name": "Nome",
+                    "Qty": "Quantidade",
+                    "Price": "Preço"
+                },
+                "Fields": {
+                    "Search": "Pesquisar"
+                },
                 "Title": "Listagem de produtos"
             },
             "ViewPurchases": {
