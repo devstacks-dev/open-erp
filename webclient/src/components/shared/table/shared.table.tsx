@@ -1,6 +1,7 @@
 import { Table } from "react-bootstrap";
 import React from "react";
 import { SharedTableColumn } from "./shared.table.column";
+import SharedTableRow from './shared.table.row';
 
 interface SharedTableProps {
     Columns: SharedTableColumn[];
@@ -30,14 +31,8 @@ class SharedTable extends React.Component<SharedTableProps> {
     private createTableBodyRows(): JSX.Element {
         return (
             <>
-                {this.props.Rows.map((row: unknown[]) => {
-                    return (
-                        <tr>
-                            {row.map((column) => {
-                                return <td>{column as string}</td>
-                            })}
-                        </tr>
-                    );
+                {this.props.Rows.map((row: unknown[], index: number) => {
+                    return <SharedTableRow Columns={this.props.Columns} Row={row} RowIx={index} />
                 })}
             </>
         );
