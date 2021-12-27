@@ -47,11 +47,23 @@ class PageViewProducts extends React.Component {
                 </Row>
                 <Row className="mt-2">
                     <Col>
-                        <SharedTable Columns={columns} Rows={rows} />
+                        <SharedTable Columns={columns}
+                                     Rows={rows}
+                                     OnClickedColumn={(column: SharedTableColumn, columnIx: number) => this.onClickedColumn(column, columnIx)}
+                                     OnClickedRow={(row: unknown[], rowIx: number) => this.onClickedRow(row, rowIx)}
+                        />
                     </Col>
                 </Row>
             </>
         );
+    }
+
+    private onClickedColumn(column: SharedTableColumn, columnIx: number): void {
+        console.log('Column: ', column, columnIx);
+    }
+
+    private onClickedRow(row: unknown[], rowIx: number): void {
+        console.log('Row: ', row, rowIx);
     }
 }
 

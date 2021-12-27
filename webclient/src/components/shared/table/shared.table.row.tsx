@@ -4,16 +4,15 @@ import { SharedTableRowUtils } from './shared.table.row-utils';
 
 interface SharedTableRowProps {
     Columns: SharedTableColumn[]
-    OnClick?: () => void;
+    OnClick: (row: unknown[]) => void;
     Row: unknown[];
-    RowIx: number;
 }
 
 class SharedTableRow extends React.Component<SharedTableRowProps> {
     render(): JSX.Element {
         return (
-            <tr onClick={this.props.OnClick} key={`row${this.props.RowIx}`}>
-                {SharedTableRowUtils.Render(this.props.Columns, this.props.Row, this.props.RowIx)}
+            <tr onClick={() => this.props.OnClick(this.props.Row)}>
+                {SharedTableRowUtils.Render(this.props.Columns, this.props.Row, 0)}
             </tr>
         );
     }
