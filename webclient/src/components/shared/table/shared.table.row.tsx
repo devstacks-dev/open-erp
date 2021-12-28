@@ -1,6 +1,6 @@
 import React from 'react';
 import { SharedTableColumn } from './shared.table.column';
-import { SharedTableRowUtils } from './shared.table.row-utils';
+import { SharedTableUtils } from './shared.table-utils';
 
 interface SharedTableRowProps {
     Columns: SharedTableColumn[]
@@ -12,7 +12,11 @@ class SharedTableRow extends React.Component<SharedTableRowProps> {
     render(): JSX.Element {
         return (
             <tr onClick={() => this.props.OnClick(this.props.Row)}>
-                {SharedTableRowUtils.Render(this.props.Columns, this.props.Row, 0)}
+                {
+                    this.props.Columns.map((column: SharedTableColumn, index: number) => {
+                        return SharedTableUtils.FormatCell(column.Type, this.props.Row[index], index)
+                    })
+                }
             </tr>
         );
     }
